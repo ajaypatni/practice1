@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Package] (
+    [id]     INT NOT NULL,
+    [Salary] INT NULL,
+    PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+GO
+ALTER TABLE [dbo].[Package] ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = OFF);
+
